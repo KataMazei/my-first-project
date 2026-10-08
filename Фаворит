@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избранное</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Adventure Time</a></div>
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="characters.html">Персонажи</a></li>
+                <li><a href="trivia.html">Факты</a></li>
+                <li><a href="creators.html">Создатели</a></li>
+                <li><a href="favorites.html" class="active">Избранное</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Ваши сохраненные персонажи</h2>
+        <div class="cards-grid" id="favorites-grid"></div>
+    </main>
+    <div class="modal" id="char-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p><strong>Вид:</strong> <span id="modal-species"></span></p>
+            <p><strong>Королевство:</strong> <span id="modal-kingdom"></span></p>
+            <p style="margin-top: 15px;" id="modal-bio"></p>
+        </div>
+    </div>
+    <footer><p>© 2026</p></footer>
+    <script src="app.js"></script>
+</body>
+</html>
