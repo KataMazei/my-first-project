@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создатели</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Adventure Time</a></div>
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="characters.html">Персонажи</a></li>
+                <li><a href="trivia.html">Факты</a></li>
+                <li><a href="creators.html" class="active">Создатели</a></li>
+                <li><a href="favorites.html">Избранное</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Пендлтон Уорд и команда</h2>
+        <p style="margin-top: 15px;">Пендлтон Уорд — создатель постапокалиптического мира Земель Ууу.</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2007 год</div>
+                <p>Выпуск короткометражного пилотного эпизода.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2010 год</div>
+                <p>Премьера 1 сезона на Cartoon Network.</p>
+            </div>
+        </div>
+    </main>
+    <footer><p>© 2026</p></footer>
+    <script src="app.js"></script>
+</body>
+</html>
