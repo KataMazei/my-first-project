@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Факты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Adventure Time</a></div>
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="characters.html">Персонажи</a></li>
+                <li><a href="trivia.html" class="active">Факты</a></li>
+                <li><a href="creators.html">Создатели</a></li>
+                <li><a href="favorites.html">Избранное</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Интересные факты</h2>
+        <div style="margin-bottom: 40px;">
+            <p>💡 <strong>Факт 1:</strong> Сериал дважды отклонили на Nickelodeon перед тем, как его взял Cartoon Network.</p>
+            <p style="margin-top: 15px;">💡 <strong>Факт 2:</strong> Музыкальные треки часто записывались вживую актерами озвучки.</p>
+        </div>
+        <h2>Предложить свой факт</h2>
+        <div class="success-box" id="success-panel">
+            <h3>🎉 Успешно!</h3>
+            <p>Форма проверена и отправлена (Panel B).</p>
+        </div>
+        <form id="trivia-form" onsubmit="validateForm(event)">
+            <div class="form-group">
+                <label for="username">Имя:</label>
+                <input type="text" id="username">
+                <div class="error-message" id="error-username">Минимум 2 символа!</div>
+            </div>
+            <div class="form-group">
+                <label for="userfact">Факт:</label>
+                <textarea id="userfact" rows="4"></textarea>
+                <div class="error-message" id="error-fact">Заполните поле!</div>
+            </div>
+            <button type="submit" class="card-btn" style="width: auto; padding: 10px 30px;">Отправить</button>
+        </form>
+    </main>
+    <footer><p>© 2026</p></footer>
+    <script src="app.js"></script>
+</body>
+</html>
